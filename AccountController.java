@@ -22,6 +22,7 @@ public class AccountController {
     public String transfer(@RequestParam Map paramMap){
         //调用业务层的方法，进行转账
         accountService.transfer(paramMap);
+       int a=10;
         return "success";
     }
 }
